@@ -2,56 +2,140 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	android:background="@color/pop_blue"
+	android:background="@color/pop_yellow"
 	android:id="@+id/popup">
 
 
 	<android.support.design.widget.TextInputLayout
 		android:layout_width="match_parent"
-		android:layout_height="@dimen/dimen_add_new_sizes">
+		android:layout_height="100dp">
 
 		<EditText
 			android:id="@+id/popup_edt_todo"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
 			android:ems="10"
-			android:hint="Todo" >
-
-			<requestFocus />
-		</EditText>
-
-
-	</android.support.design.widget.TextInputLayout>
-
-
-	<android.support.design.widget.TextInputLayout
-		android:layout_width="match_parent"
-		android:layout_height="@dimen/dimen_add_new_sizes">
-
-		<EditText
-			android:id="@+id/popup_edt_date"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:ems="10"
-			android:hint="Date"
+			android:layout_weight="1"
+			android:hint="Todo"
 			/>
 
 	</android.support.design.widget.TextInputLayout>
 
 
-	<android.support.design.widget.TextInputLayout
+
+	<LinearLayout
+		android:orientation="horizontal"
 		android:layout_width="match_parent"
-		android:layout_height="@dimen/dimen_add_new_sizes">
+		android:layout_height="@dimen/dimen_add_new_sizes"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:weightSum="3"
+		>
 
-		<EditText
-			android:id="@+id/popup_edt_time"
-			android:layout_width="match_parent"
+		<Switch
+			android:text="@string/alarm_question"
+			android:layout_width="0dp"
 			android:layout_height="wrap_content"
-			android:ems="10"
-			android:hint="Time"
-			/>
+			android:layout_gravity="center"
+			android:layout_weight="2.7"
+			android:id="@+id/popup_switch_alarm"
+			android:textSize="@dimen/dimen_add_new_text_size"
+			android:textOn="@string/switch_on"
+			android:textOff="@string/switch_off" />
 
-	</android.support.design.widget.TextInputLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linM"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/dimen_add_new_sizes"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_alignParentLeft="true"
+		android:weightSum="2">
+
+
+		<LinearLayout
+			android:id="@+id/linDates"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dimen_add_new_sizes"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_alignParentLeft="true"
+			android:layout_weight="1"
+			android:weightSum="3">
+
+			<TextView
+				android:text="@string/todo_date"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:textSize="@dimen/dimen_add_new_text_size"
+				android:id="@+id/textView5"
+				android:textColor="@color/black"
+				android:layout_weight="1" />
+
+			<TextView
+				android:id="@+id/popup_txt_date"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center|right"
+				android:layout_gravity="center"
+				android:enabled="false"
+				android:textColor="@color/gray"
+				android:textSize="@dimen/dimen_add_new_text_size"
+				android:text="05/12/2016" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/linTimes"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/dimen_add_new_sizes"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_alignParentLeft="true"
+			android:layout_weight="1">
+
+			<TextView
+				android:text="@string/todo_time"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_gravity="center"
+				android:textSize="@dimen/dimen_add_new_text_size"
+				android:id="@+id/textView9"
+				android:textColor="@color/black"
+				android:layout_weight="1" />
+
+			<TextView
+				android:id="@+id/popup_txt_time"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.7"
+				android:gravity="center|right"
+				android:layout_gravity="center"
+				android:enabled="false"
+				android:textColor="@color/gray"
+				android:textSize="@dimen/dimen_add_new_text_size"
+				android:text="13:30" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+
+
+
 
 
 	<LinearLayout
@@ -60,18 +144,18 @@
 		android:layout_height="match_parent">
 
 		<ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/popup_btn_close"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/popup_btn_close"
 			android:src="@drawable/ic_close_black_24dp"
 			android:tint="@color/white"
 			android:theme="@style/MyButton"
 			android:layout_weight="1" />
 
 		<ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/popup_btn_save"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/popup_btn_save"
 			android:src="@drawable/ic_check_black_24dp"
 			android:tint="@color/white"
 			android:theme="@style/MyButton"

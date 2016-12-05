@@ -34,6 +34,11 @@ public class TodoClass {
     }
 
 
+    public TodoClass(String date, String time){
+        this._date = date;
+        this._time = time;
+    }
+
     public TodoClass(int done){
         this._done = done;
     }

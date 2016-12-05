@@ -73,7 +73,11 @@
     <color name="soft_tranparent">#403FBDA7</color>
 
     <color name="pop_green">#266A2E</color>
-    <color name="pop_blue">#6B78B4</color>
+
+    <color name="pop_bluee">#177F75</color>
+    <color name="pop_darkred">#7F171F</color>
+    <color name="pop_yellow">#B67721</color>
+    <color name="pop_red">#B6212D</color>
 
 
 

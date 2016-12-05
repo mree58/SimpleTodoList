@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Yapılacaklar Listesi</string>
+
+    <string name="action_help">Yardım</string>
+    <string name="action_about">Hakkında</string>
+    <string name="action_rate">Google Play\'de Oylayın</string>
+
+    <string name="action_help_message">Yapıldı olarak işaretlemek için sağa kaydırın !\nSilmek için sola kaydırın !\n Listeyi düzenlemek için üzerine tıklayın !</string>
+
+    <string name="about_title_simpletodolist">Yapılacaklar Listesi</string>
+    <string name="about_simpletodolist">Bu mobil uygulama Emre Baran tarafından tasarlanmış ve kodlanmıştır. Bazı ikonlar ve görseller CC-BY Lisansı\'na sahiptir. Bir kısmının kişisel ve ticari kullanımı serbesttir. Az bir kısmı Emre Baran tarafından tasarlanmıştır.</string>
+    <string name="about_title_special_thanks">Özel Teşekkür</string>
+    <string name="about_special_thanks">Wouter Dullaert : Thank you for Swipe Action Adapter library.</string>
+    <string name="about_title_application">Uygulama Hakkında</string>
+    <string name="about_application">Bu uygulama açık-kaynak bir yazılımdır. Kaynak kodları GitHub\'da bulabilirsiniz: mree58 \nFikirlerinizi paylaşmak istiyorsanız veya uygulama ile ilgili sorun yaşıyorsanız lütfen iletişime geçin. Mail: emrebaran.ceng@gmail.com</string>
+    <string name="about_title_permissions">İzinler Hakkında</string>
+    <string name="about_permissions">WAKE_LOCK: alarm kurabilmek için, yaklaşan doğum günleri hakkında bildirim alırsınız</string>
+    <string name="about_application_version">Uygulama Versiyonu: 1.0.0</string>
+    <string name="about_supported_languages">Desteklenen Diller: English, Türkçe</string>
+
+
+    <string name="notify_todo1">Yapılacak Listesi Hatırlatma</string>
+    <string name="notify_todo2">Yapılacak Listesi Hatırlatma</string>
+    <string name="notify_todo3">Yapılacak bir işiniz var !</string>
+
+    <string name="switch_on">Evet</string>
+    <string name="switch_off">Hayır</string>
+
+    <string name="yes">EVET</string>
+    <string name="no">HAYIR</string>
+
+    <string name="delete_question">Silmek istediğinizden emin misiniz ?</string>
+
+
+    <string name="alarm_question">Hatırlatıcı Kur ?</string>
+    <string name="todo_date">Tarih :</string>
+    <string name="todo_time">Saat :</string>
+
+
+    <string name="alarm_cancelled">Alarm İptal Edildi !</string>
+    <string name="alarm_set">Alarm kuruldu</string>
+    <string name="alarm_error">Alarm is null !</string>
+    <string name="alarm_wrong_date">Tarih geçti !</string>
+    <string name="alarm_not_found">Alarm bulunamadı !</string>
+
+
+    <string name="edit_update_warning">Güncelleme başarısız  !</string>
+
+    <string name="app_exit">Çıkmak için tekrar basın</string>
+
+</resources>

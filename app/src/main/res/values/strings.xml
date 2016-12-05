@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">Simple Todo List</string>
+
+    <string name="action_help">Help</string>
+    <string name="action_about">About</string>
+    <string name="action_rate">Rate App</string>
+
+    <string name="action_help_message">Swipe right to mark as done !\nSwipe left to delete it !\n Click list item to edit it !</string>
+
+    <string name="about_title_simpletodolist">Simple Todo List</string>
+    <string name="about_simpletodolist">This mobile application designed and coded by Emre Baran. Some icons and graphs have CC-BY License. Some of them are free for personal and commercial use. And a few of them are designed by Emre Baran.</string>
+    <string name="about_title_special_thanks">Special Thanks</string>
+    <string name="about_special_thanks">Wouter Dullaert : Thank you for Swipe Action Adapter library.</string>
+    <string name="about_title_application">About Application</string>
+    <string name="about_application">This application is open-source software. You can find the source codes on GitHub: mree58 \nFeel free to contact if you have any ideas or problems with application. Mail: emrebaran.ceng@gmail.com</string>
+    <string name="about_title_permissions">About Permissions</string>
+    <string name="about_permissions">WAKE_LOCK: for alarm, let you inform about incoming todos</string>
+    <string name="about_application_version">Application Version: 1.0.0</string>
+    <string name="about_supported_languages">Supported Languages: English, Türkçe</string>
+
+
+    <string name="notify_todo1">Todo Reminder</string>
+    <string name="notify_todo2">Todo Reminder</string>
+    <string name="notify_todo3">There is something to be done !</string>
+
+    <string name="switch_on">Yes</string>
+    <string name="switch_off">No</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="delete_question">Are you sure you want to delete ?</string>
+
+
+    <string name="alarm_question">Set reminder ?</string>
+    <string name="todo_date">Date :</string>
+    <string name="todo_time">Time :</string>
+
+    <string name="alarm_cancelled">Alarm Cancelled !</string>
+    <string name="alarm_set">Alarm is set</string>
+    <string name="alarm_error">Alarm is null !</string>
+    <string name="alarm_wrong_date">Date is past !</string>
+    <string name="alarm_not_found">Alarm not found !</string>
+
+    <string name="edit_update_warning">Update failed  !</string>
+
+    <string name="app_exit">Press Again To Exit</string>
+
 </resources>

@@ -38,14 +38,17 @@ public class ListAdapterTodos extends ArrayAdapter<String>{
 	TextView txtTitle3 = (TextView) rowView.findViewById(R.id.item_time);
 
 	txtTitle.setText(_todos[position]);
+	txtTitle2.setText(_dates[position]);
+	txtTitle3.setText(_times[position]);
 
 	if(_dones[position]==1)
 	{
 		txtTitle.setPaintFlags(txtTitle.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+		txtTitle2.setPaintFlags(txtTitle.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+		txtTitle3.setPaintFlags(txtTitle.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
 	}
-	txtTitle2.setText(_dates[position]);
-	txtTitle3.setText(_times[position]);
+
 	
 	return rowView;
 	}

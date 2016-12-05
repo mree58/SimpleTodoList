@@ -76,10 +76,23 @@ public class TodoDB extends SQLiteOpenHelper {
     }
 
 
-    // Getting All Words
+    int updateTodo(TodoClass td, int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_TODO, td.getTodo());
+        values.put(KEY_DATE, td.getDate());
+        values.put(KEY_TIME, td.getTime());
+        values.put(KEY_DONE, td.getDone());
+
+        return db.update(TABLE_TODO, values, KEY_ID + " = ?", new String[] { String.valueOf(id) });
+
+    }
+
+    // Getting All Todos
     public List<TodoClass> getAllTodos() {
         List<TodoClass> tdList = new ArrayList<TodoClass>();
-        // Select All Query Order By Days Left
+        // Select All Query Order By ID
         String selectQuery = "SELECT  * FROM " + TABLE_TODO + " ORDER BY "+ KEY_ID;
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -95,7 +108,7 @@ public class TodoDB extends SQLiteOpenHelper {
                 td.setTime(cursor.getString(3));
                 td.setDone(Integer.parseInt(cursor.getString(4)));
 
-                // Adding people to list
+                // Adding todo to list
                 tdList.add(td);
             } while (cursor.moveToNext());
         }
@@ -123,6 +136,20 @@ public class TodoDB extends SQLiteOpenHelper {
         db.close();
 
         return count;
+    }
+
+
+    // Updating date and time status
+    public int updateDate(TodoClass td,int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_DATE, td.getDate());
+        values.put(KEY_TIME, td.getTime());
+
+
+        // updating row
+        return db.update(TABLE_TODO, values, KEY_ID + " = ?", new String[] { String.valueOf(id) });
     }
 
 
